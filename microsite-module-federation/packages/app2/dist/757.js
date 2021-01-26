@@ -1,0 +1,1 @@
+(self.webpackChunk_bi_directional_app2=self.webpackChunk_bi_directional_app2||[]).push([[757],{757:(e,n,t)=>{"use strict";t.r(n),t.d(n,{default:()=>r});var a=t(131),o=t.n(a);const p={background:"#19b868",color:"#fff",padding:12,border:"none",borderRadius:"4px",fontSize:"20px"},r=()=>o().createElement("button",{style:p},"App 2 Button")}}]);
