@@ -1,18 +1,14 @@
 import LocalButton from "./Button";
 import React from "react";
-const wasm = import("../hello-wasm/pkg/hello_wasm_bg");
-// const RemoteButton = React.lazy(() => import("app2/Button"));
+
+const RemoteButton = React.lazy(() => import("app2/Button"));
 
 const App = () => {
-  wasm.then(({ greet }) => {
-    console.log("COOL");
-    greet();
-  });
-
   return (
     <div>
-      <h2>App 1</h2>
-      <LocalButton />
+      <React.Suspense fallback={<div>Loading... error!</div>}>
+        <RemoteButton />
+      </React.Suspense>
     </div>
   );
 };
